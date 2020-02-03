@@ -7,6 +7,8 @@ $(document).ready(function () {
         arrows: false,
         dots: true,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
 
         responsive: [{
             breakpoint: 1023,
@@ -34,6 +36,8 @@ $(document).ready(function () {
         infinite: true,
         centerMode: true,
         variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: '<span class="slick-arrow--custom-left">	&larr;</span>',
         nextArrow: '<span class="slick-arrow--custom-right">&rarr;</span>'
     });
@@ -43,6 +47,8 @@ $(document).ready(function () {
         centerMode: true,
         infinite: true,
         variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: '<span class="slick-arrow--custom-left">	&larr;</span>',
         nextArrow: '<span class="slick-arrow--custom-right">&rarr;</span>'
 
