@@ -273,7 +273,7 @@
     margin-top: 60px;
 
     @media(max-width:1023px) {
-        display: none;
+        // display: none;
     }
 }
 
@@ -423,7 +423,6 @@
         left: 0;
         right: 0;
         background-color: rgba(47, 109, 202, .95);
-        ;
         flex-direction: column;
         transform: translateX(100%);
         transition: .5s;
@@ -451,6 +450,9 @@
 }
 
 @media(max-width:767px) {
+    .header {
+        height: 850px;
+    }
 
     .header-nav {
         top: 75px;
@@ -494,9 +496,6 @@
 
 @media(max-width:424px) {
     .logo-name {
-
         display: none;
     }
-
-
 }

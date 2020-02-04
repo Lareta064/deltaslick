@@ -1,0 +1,61 @@
+footer.footer
+    .container
+        h2.title-2 контакты
+        .footer-content
+            .footer-column
+                p Дельта В Групп
+                .flex-box
+                    .contacts-block
+                        a(href="#").contact-item +7(977)986-57-38
+                            span
+                                i.fas.fa-mobile-alt
+                        a(href="#").contact-item info@dv-proekt.ru
+                            span
+                                i.far.fa-envelope
+                        .contact-item г. Москва #[br] 5-ый Донской проезд, д. 15
+                            span
+                                i.fas.fa-map-marker-alt
+                        .contact-item Пн-Пт #[br] 9-00 до 18-00
+                            span
+                                i.far.fa-clock
+                        a(href="#").contact-item +7(977)986-57-38
+                            span
+                                i.far.fa-comment
+                        a(href="#").contact-item Политика #[br] конфеденциальности
+                            span
+                                i.far.fa-file-alt
+                    .footer-menu
+                        a(href="#").menu-item О компании
+                        a(href="#").menu-item Услуги
+                        a(href="#").menu-item Портфолио
+                        a(href="#").menu-item Контакты
+                a(href="#!").page-button заказать звонок
+            
+            .footer-column
+                .footer-map
+                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A86bdac4a9c8b239a1700efdc5748fcb0d649d839dae977b2deb8601819a36912&amp;source=constructor" width="100%" height="100%" frameborder="0")
+
+
+
+#buttonForm.modal.fade(tabindex="-1" role="dialog" aria-labelledby="buttonFormTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content
+            .modal-header
+                .modal-form-title
+                    h5#buttonFormTitle.modal-title рассчитать проект
+                    p наш менеджер свяжется с вами в ближайщее время
+                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") ×
+            .modal-body
+                form(action="")
+                    .form-group
+                        input(type="text" name="user-name" required).form-input
+                        span
+                            i.far.fa-user
+                    .form-group
+                        input(type="tel" name="user-tel" required).form-input.phone
+                        span
+                            i.fas.fa-mobile-alt
+                    .form-group
+                        input(type="submit" value="отправить заявку" ).form-input.page-button
+                    p.politic-text Отправляя заявку вы соглашаетесь на обработку персональных данных

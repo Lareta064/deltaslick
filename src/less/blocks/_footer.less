@@ -1,0 +1,207 @@
+.footer {
+    padding-top: 35px;
+    padding-bottom: 85px;
+    background-color: #454444;
+    color: #fff;
+
+    .title-2 {
+        color: #fff;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.footer-column {
+    width: 50%;
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    .page-button {
+        color: #fff;
+        border-color: #fff;
+        margin-top: 20px;
+
+        &:hover {
+            color: @blue;
+            border-color: @blue;
+        }
+    }
+
+    @media(max-width: 991px) {
+        width: 100%;
+    }
+}
+
+.footer-column:first-child {
+    @media(max-width: 991px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-content,
+.flex-box {
+    display: flex;
+}
+
+.footer-content {
+    @media(max-width: 767px) {
+        display: block;
+    }
+}
+
+.contacts-block {
+    margin-right: 10%;
+
+    @media(max-width: 767px) {
+        margin-right: 0%;
+    }
+}
+
+.contacts-block .contact-item {
+    display: block;
+    padding: 5px;
+    padding-left: 45px;
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    transition: .5s;
+
+
+    span {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-weight: 300;
+
+    }
+
+}
+
+a.contact-item:hover {
+    color: @blue;
+}
+
+.footer-menu {
+    .menu-item {
+        display: block;
+        color: #fff;
+        font-weight: 300;
+        transition: .5s;
+
+        &:hover {
+            color: @blue;
+        }
+    }
+
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+
+.footer-map {
+    height: 470px;
+
+    @media(max-width: 991px) {
+        height: 300px;
+    }
+}
+
+#buttonForm .modal-content {
+    background-color: transparent;
+    border: none;
+
+    button {
+        position: absolute;
+        top: -50px;
+        right: -15px;
+        font-size: 2rem;
+        transition: .5s;
+        outline: none;
+
+        &:hover {
+            color: @blue;
+        }
+    }
+}
+
+.modal-dialog {
+    position: relative;
+    padding: 80px;
+    background: url('../img/bg/modalBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media(max-width:991px) {
+        padding: 60px;
+    }
+
+    @media(max-width:424px) {
+        padding: 20px;
+    }
+}
+
+.modal-form-title {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 300px;
+
+    h5 {
+        font-size: 25px;
+
+        @media(max-width:991px) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        font-size: 12px;
+
+    }
+}
+
+.form-group {
+    position: relative;
+
+    span {
+        position: absolute;
+        left: 25px;
+        top: 18px;
+        font-size: 30px;
+    }
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 60px;
+    height: 70px;
+    border: 1px solid #4e4d4d;
+    background-color: #fff;
+}
+
+.form-input[type="text"]:focus,
+.form-input[type="tel"]:focus,
+.form-input[type="text"]:valid,
+.form-input[type="tel"]:valid {
+    border-color: @blue;
+}
+
+.form-input.page-button {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: auto;
+}
+
+.politic-text {
+    font-size: 12px;
+}

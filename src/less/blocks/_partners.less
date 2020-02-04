@@ -5,6 +5,12 @@
         padding-top: 150px;
     }
 
+    .title-2 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 .partners-block {
@@ -15,7 +21,11 @@
 }
 
 .partners-block {
-    padding-top: 80px;
+    padding-top: 60px;
+
+    @media(max-width:767px) {
+        padding-top: 0;
+    }
 }
 
 .partner-card {
@@ -24,10 +34,17 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .45);
+    // box-shadow: 0 0 25px rgba(0, 0, 0, .45);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width:1199px) {
+        height: 90px;
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .partner-card img {
