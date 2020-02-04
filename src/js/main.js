@@ -86,6 +86,25 @@ $(document).ready(function () {
             preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         }
     });
+
+    //menu-drop
+    const menuElement = document.querySelector('.nav__item-drop ');
+    const menuDrop = document.querySelector('.dropdown ');
+    const bodyElement = document.querySelector('body')
+    // menuElement.addEventListener('mouseenter', function () {
+    //     menuDrop.classList.add('active');
+    // });
+    bodyElement.addEventListener('click', function () {
+        menuDrop.classList.remove('active');
+    })
+    menuElement.addEventListener('click', function (e) {
+        e.stopImmediatePropagation()
+        menuDrop.classList.toggle('active');
+    })
+    window.addEventListener('resize', function () {
+        menuDrop.classList.remove('active');
+    })
+
     // $(".doc-slider").magnificPopup({
     //     delegate: 'a',
     //     type: 'image',
