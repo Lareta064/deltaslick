@@ -138,5 +138,13 @@ $(document).ready(function () {
         })
     }
 
+    const moreInfo = document.querySelector('.more-info')
+    const hidetext = document.querySelector('.hide-info')
 
+    if (moreInfo) {
+        moreInfo.addEventListener('click', function () {
+            hidetext.classList.add('active')
+            this.classList.add('hide')
+        })
+    }
 })

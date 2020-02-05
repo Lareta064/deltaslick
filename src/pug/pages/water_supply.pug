@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
+
+block content
+    +headerInner('servWeaterBg', ' водоснабжение&nbsp;и <br>канализация', 'посмотреть презентацию')
+    include ../sections/_service-description.pug
+    include ../sections/_feedback.pug
+    
+    include ../sections/_benefits.pug
+    include ../sections/_works.pug    
+    include ../sections/_serv-info.pug
+    include ../sections/_footer.pug
+
+
+block variables
+    -var title = "Водоснабжение";

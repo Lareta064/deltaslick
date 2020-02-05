@@ -103,4 +103,20 @@
 .benefits-text-item.active {
     z-index: 10;
     opacity: 1;
+
+}
+
+.container-col-border {
+    position: relative;
+}
+
+.container-col-border:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 150px;
+    background-color: @blue;
+    bottom: 10%;
+
 }

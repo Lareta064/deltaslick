@@ -10,7 +10,7 @@ mixin work-slide(imgSrc, slideNum, descrip, stage, modalId)
         .works-slider-btn
             a(href="#!" type="button" data-toggle="modal" data-target= modalId ).page-button Подробнее
 
-mixin work-modal(modalId, title, stage, companyName )
+mixin work-modal(modalId, title, stage, companyName, src )
     .slider-modal.modal.fade(id = modalId tabindex="-1" role="dialog" aria-hidden="true")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content                
@@ -20,7 +20,7 @@ mixin work-modal(modalId, title, stage, companyName )
                     .work-info
                         .modal-col.modal-col--img
                             .work-img
-                                img(src="img/works/1.jpg", alt="project")
+                                img(src="img/works/"+ src+".jpg", alt="project")
                             .work-title !{title}
 
                         .modal-col.modal-col--descrip
@@ -57,11 +57,13 @@ section.works
     .container-fluid
         .works-wrapper
             .works-slider
-                +work-slide(1, '01', ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum quidem delectus illo saepe facere veniam sint facilis', 'P', '#modal1')
-                +work-slide(2, '02', ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum quidem delectus illo saepe facere veniam sint facilis', 'P', '#modal2')
-                +work-slide(3, '03', ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum quidem delectus illo saepe facere veniam sint facilis', 'P', '#modal3')
-                +work-slide(4, '04', ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum quidem delectus illo saepe facere veniam sint facilis', 'P', '#modal4')
-+work-modal('modal1', 'Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'П','ООО «МЕРАКОМ»')
-+work-modal('modal2', 'Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'П','ООО «МЕРАКОМ»')
-+work-modal('modal3', 'Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'П','ООО «МЕРАКОМ»')
-+work-modal('modal4', 'Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'П','ООО «МЕРАКОМ»')
+                +work-slide(1, '01', ' Некапитальное сооружение – сборноразборный малый уличный сценический комплекс на объекте культурного наследия федерального значения.', 'P', '#modal1')
+                +work-slide(2, '02', ' Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'P', '#modal2')
+                +work-slide(3, '03', ' Разработка проектной документации по объекту:  «Центр NICA»', 'П', '#modal3')
+                +work-slide(1, '01', ' Некапитальное сооружение – сборноразборный малый уличный сценический комплекс на объекте культурного наследия федерального значения.', 'P', '#modal1')
+                +work-slide(2, '02', ' Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'P', '#modal2')
+                +work-slide(3, '03', ' Разработка проектной документации по объекту:  «Центр NICA»', 'П', '#modal3')
+
++work-modal('modal1', 'Некапитальное сооружение – сборноразборный малый уличный сценический комплекс на объекте культурного наследия федерального значения.', 'P','ООО «МЕРАКОМ»', 1)
++work-modal('modal2', 'Гостинично-деловой комплекс по адресу: г. Москва, ул. 5-я Мякининская, вл. 20, ул. 4-я Мякининская, вл. 27, стр.1', 'П','ООО «МЕРАКОМ»', 2)
++work-modal('modal3', 'Разработка проектной документации по объекту:  «Центр NICA»', 'П','ООО «МЕРАКОМ»', 3)

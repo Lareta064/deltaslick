@@ -348,7 +348,7 @@
 .dropdown {
     display: none;
     position: absolute;
-    bottom: -63px;
+    bottom: -55px;
     left: 0;
     transform: translateY(100%);
     padding: 20px;
@@ -360,7 +360,7 @@
 
     @media(max-width:1599px) {
         left: -100%;
-        bottom: -42px;
+        bottom: -35px;
     }
 
     @media(max-width:1365px) {
@@ -638,4 +638,41 @@
 
 .header-inner .header-center {
     padding-top: 60px;
+}
+
+.header-btn {
+    display: flex;
+
+    a {
+        width: 330px;
+        margin-right: 20px;
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media(max-width:767px) {
+        display: block;
+
+        a {
+            width: 280px;
+            margin-right: 0px;
+            white-space: nowrap;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            // height: 50px;
+
+            &:last-child {
+                margin-top: 20px;
+            }
+
+
+        }
+    }
 }

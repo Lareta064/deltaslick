@@ -70,9 +70,10 @@ mixin headerInner(bgSrc, title, btnText)
             .header-center
                 .header-title
                     h1.title-1  !{title}
-                    //- разработка проектной&nbsp;и #[br] рабочей документации
-                    .header-btn
-                        a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button Рассчитать проект
-                        if btnText
+                    if btnText
+                        .header-btn
+                            a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button Рассчитать проект
+
                             a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button #{btnText}
-                
+                    else
+                        a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button Рассчитать проект
