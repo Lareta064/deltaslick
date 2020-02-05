@@ -91,16 +91,16 @@ $(document).ready(function () {
     const menuElement = document.querySelector('.nav__item-drop ');
     const menuDrop = document.querySelector('.dropdown ');
     const bodyElement = document.querySelector('body')
-    // menuElement.addEventListener('mouseenter', function () {
-    //     menuDrop.classList.add('active');
-    // });
+    menuElement.addEventListener('mouseenter', function () {
+        menuDrop.classList.add('active');
+    });
     bodyElement.addEventListener('click', function () {
         menuDrop.classList.remove('active');
     })
-    menuElement.addEventListener('click', function (e) {
-        e.stopImmediatePropagation()
-        menuDrop.classList.toggle('active');
-    })
+    // menuElement.addEventListener('click', function (e) {
+    //     e.stopImmediatePropagation()
+    //     menuDrop.classList.toggle('active');
+    // })
     window.addEventListener('resize', function () {
         menuDrop.classList.remove('active');
     })
@@ -115,5 +115,28 @@ $(document).ready(function () {
     //         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     //     }
     // });
+
+    //tabs
+    const filerToggles = document.querySelectorAll('.filter-item')
+    const filerContent = document.querySelectorAll('.tab-content')
+
+    for (let i = 0; i < filerToggles.length; i++) {
+        filerToggles[i].addEventListener('click', function () {
+            for (let item of filerToggles) {
+                item.classList.remove('active');
+            }
+            this.classList.add('active');
+            const thisData = this.getAttribute('data-index');
+            for (let content of filerContent) {
+                content.classList.remove('active');
+                const contentData = content.getAttribute('data-role');
+                if (contentData == thisData) {
+                    content.classList.add('active');
+                }
+            }
+
+        })
+    }
+
 
 })

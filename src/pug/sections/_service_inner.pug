@@ -1,0 +1,222 @@
+mixin filterItem(icon, title, data, activeClass)
+    .filter-item(data-index= data class=" "+ activeClass)
+        .filter-icon #{icon}                       
+        .filter-title
+            span !{title}
+section.our-service
+    .container
+        h2.title-2 наши услуги
+        .service-tab
+            .service-tab-filters
+                +filterItem('111', 'все', '1', 'active')
+                +filterItem('222', 'ВНУТРЕННИЕ <br>ИНЖЕНЕРНЫЕ СЕТИ', '2')
+                +filterItem('333', 'НАРУЖНЫЕ<br>ИНЖЕНЕРНЫЕ СЕТИ', '3')
+                +filterItem('444', 'ИТП', '4')
+                +filterItem('555', 'специальные разделы', '5')
+            
+            .service-tab-content
+                .tab-content.active(data-role="1")
+                    .tab-content-col
+                        .alphabet-block
+                            p.tab-content-title А
+                            .tab-content-item 
+                                p Автоматизированная система управления и диспетчеризации
+                                p Автоматическая пожарная сигнализация
+                                p Автоматическая установка пожарной сигнализации
+                                p Автоматическая установка пожаротушения
+                                p Архитектурно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title В
+                            .tab-content-item
+                                p Водоснабжение и водоотведение
+                        .alphabet-block
+                            p.tab-content-title К
+                            .tab-content-item
+                                p Конструктивно и объемно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title Л
+                            .tab-content-item
+                                p Локальная вычислительная сеть
+                        .alphabet-block
+                            p.tab-content-title М
+                            .tab-content-item
+                                p Мероприятия по обеспечению доступа инвалидов 
+                                p Мероприятия по обеспечению пожарной безопасности
+                        .alphabet-block
+                            p.tab-content-title О
+                            .tab-content-item
+                                p Охранная сигнализация
+                                p Охранно-Защитная Дератизационная Система
+                                p Отопление, вентиляция и  кондиционирование
+                    .tab-content-col    
+                        .alphabet-block
+                            p.tab-content-title П
+                            .tab-content-item 
+                                p Противодымная вентиляция
+                                p Противопожарный водопровод
+                                p Проект организации дорожного движения 
+                                p Проект организации строительства 
+                                p Перечень мероприятий по охране окружающей среды
+                        .alphabet-block
+                            p.tab-content-title Р
+                            .tab-content-item 
+                                p Радиофикация
+                        .alphabet-block
+                            p.tab-content-title С
+                            .tab-content-item 
+                                p Система кабельного телевидения
+                                p Система охранного телевидения
+                                p Система часофикации
+                                p Система телефонизации
+                                p Система оповещения и управления эвакуацией
+                                p Структурированная кабельная система 
+                                p Схема планировочной организации земельного участка
+                        .alphabet-block
+                            p.tab-content-title Т
+                            .tab-content-item 
+                                p Технологические решения
+                                p Требования к обеспечению безопасной эксплуатации объектов 
+                        .alphabet-block
+                            p.tab-content-title Э
+                            .tab-content-item 
+                                p Электроснабжение и электроосвещение
+                                p Энергоэффективность 
+                
+                
+                .tab-content(data-role="2")
+                    .tab-content-col
+                        .alphabet-block
+                            p.tab-content-title А
+                            .tab-content-item 
+                                p Автоматизированная система управления и диспетчеризации
+                                p Автоматическая пожарная сигнализация
+                                p Автоматическая установка пожарной сигнализации
+                                p Автоматическая установка пожаротушения
+                                p Архитектурно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title В
+                            .tab-content-item
+                                p Водоснабжение и водоотведение
+                        .alphabet-block
+                            p.tab-content-title К
+                            .tab-content-item
+                                p Конструктивно и объемно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title Л
+                            .tab-content-item
+                                p Локальная вычислительная сеть
+                    .tab-content-col    
+                        .alphabet-block
+                            p.tab-content-title М
+                            .tab-content-item
+                                p Мероприятия по обеспечению доступа инвалидов 
+                                p Мероприятия по обеспечению пожарной безопасности
+                        .alphabet-block
+                            p.tab-content-title О
+                            .tab-content-item
+                                p Охранная сигнализация
+                                p Охранно-Защитная Дератизационная Система
+                                p Отопление, вентиляция и  кондиционирование
+                .tab-content(data-role="3")
+                    .tab-content-col
+                        .alphabet-block
+                            p.tab-content-title А
+                            .tab-content-item 
+                                p Автоматизированная система управления и диспетчеризации
+                                p Автоматическая пожарная сигнализация
+                                p Автоматическая установка пожарной сигнализации
+                                p Автоматическая установка пожаротушения
+                                p Архитектурно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title В
+                            .tab-content-item
+                                p Водоснабжение и водоотведение
+                        .alphabet-block
+                            p.tab-content-title К
+                            .tab-content-item
+                                p Конструктивно и объемно-планировочные решения
+                    .tab-content-col    
+                        .alphabet-block
+                            p.tab-content-title Л
+                            .tab-content-item
+                                p Локальная вычислительная сеть
+                        .alphabet-block
+                            p.tab-content-title М
+                            .tab-content-item
+                                p Мероприятия по обеспечению доступа инвалидов 
+                                p Мероприятия по обеспечению пожарной безопасности
+                        .alphabet-block
+                            p.tab-content-title О
+                            .tab-content-item
+                                p Охранная сигнализация
+                                p Охранно-Защитная Дератизационная Система
+                                p Отопление, вентиляция и  кондиционирование
+                .tab-content(data-role="4")
+                    .tab-content-col
+                        .alphabet-block
+                            p.tab-content-title А
+                            .tab-content-item 
+                                p Автоматизированная система управления и диспетчеризации
+                                p Автоматическая пожарная сигнализация
+                                p Автоматическая установка пожарной сигнализации
+                                p Автоматическая установка пожаротушения
+                                p Архитектурно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title В
+                            .tab-content-item
+                                p Водоснабжение и водоотведение
+                        .alphabet-block
+                            p.tab-content-title К
+                            .tab-content-item
+                                p Конструктивно и объемно-планировочные решения
+                    .tab-content-col    
+                        .alphabet-block
+                            p.tab-content-title Л
+                            .tab-content-item
+                                p Локальная вычислительная сеть
+                        .alphabet-block
+                            p.tab-content-title М
+                            .tab-content-item
+                                p Мероприятия по обеспечению доступа инвалидов 
+                                p Мероприятия по обеспечению пожарной безопасности
+                        .alphabet-block
+                            p.tab-content-title О
+                            .tab-content-item
+                                p Охранная сигнализация
+                                p Охранно-Защитная Дератизационная Система
+                                p Отопление, вентиляция и  кондиционирование
+                .tab-content(data-role="5")
+                    .tab-content-col
+                        .alphabet-block
+                            p.tab-content-title А
+                            .tab-content-item 
+                                p Автоматизированная система управления и диспетчеризации
+                                p Автоматическая пожарная сигнализация
+                                p Автоматическая установка пожарной сигнализации
+                                p Автоматическая установка пожаротушения
+                                p Архитектурно-планировочные решения
+                        .alphabet-block
+                            p.tab-content-title В
+                            .tab-content-item
+                                p Водоснабжение и водоотведение
+                        .alphabet-block
+                            p.tab-content-title К
+                            .tab-content-item
+                                p Конструктивно и объемно-планировочные решения
+                        
+                    .tab-content-col   
+                        .alphabet-block
+                            p.tab-content-title Л
+                            .tab-content-item
+                                p Локальная вычислительная сеть
+                        .alphabet-block
+                            p.tab-content-title М
+                            .tab-content-item
+                                p Мероприятия по обеспечению доступа инвалидов 
+                                p Мероприятия по обеспечению пожарной безопасности
+                        .alphabet-block
+                            p.tab-content-title О
+                            .tab-content-item
+                                p Охранная сигнализация
+                                p Охранно-Защитная Дератизационная Система
+                                p Отопление, вентиляция и  кондиционирование
