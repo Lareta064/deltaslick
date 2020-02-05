@@ -59,6 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     @media(max-width:1199px) {
         width: 19%;
@@ -75,6 +76,34 @@
 
 .filter-icon {
     margin-bottom: 10px;
+
+    @media(max-width:767px) {
+        display: none;
+    }
+}
+
+.icon-passiv {
+    display: block;
+}
+
+.icon-active {
+    display: none;
+}
+
+.filter-item:hover {
+    .icon-passiv {
+        display: none;
+    }
+
+    .icon-active {
+        display: block;
+    }
+
+    .filter-title {
+        border: 1px solid @blue;
+        color: @blue;
+    }
+
 }
 
 .filter-title {
@@ -107,7 +136,7 @@
 }
 
 .filter-item.active {
-    color: red;
+    color: @blue;
 }
 
 .tab-content {

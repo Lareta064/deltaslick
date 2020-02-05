@@ -1,7 +1,9 @@
 extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
 
 block content
-    include ../sections/_header_inner.pug
+    +headerInner('serviceBg', ' разработка проектной&nbsp;и <br> рабочей документации')
     include ../sections/_service_inner.pug
     include ../sections/_feedback.pug
     

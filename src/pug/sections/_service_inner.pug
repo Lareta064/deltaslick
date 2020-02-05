@@ -1,6 +1,8 @@
-mixin filterItem(icon, title, data, activeClass)
+mixin filterItem(srcIcon1,srcIcon2, title, data, activeClass)
     .filter-item(data-index= data class=" "+ activeClass)
-        .filter-icon #{icon}                       
+        .filter-icon
+            img.icon-passiv(src="img/tabs/"+srcIcon1+".svg", alt="icon")
+            img.icon-active(src="img/tabs/"+srcIcon2+".svg", alt="icon")
         .filter-title
             span !{title}
 section.our-service
@@ -8,11 +10,11 @@ section.our-service
         h2.title-2 наши услуги
         .service-tab
             .service-tab-filters
-                +filterItem('111', 'все', '1', 'active')
-                +filterItem('222', 'ВНУТРЕННИЕ <br>ИНЖЕНЕРНЫЕ СЕТИ', '2')
-                +filterItem('333', 'НАРУЖНЫЕ<br>ИНЖЕНЕРНЫЕ СЕТИ', '3')
-                +filterItem('444', 'ИТП', '4')
-                +filterItem('555', 'специальные разделы', '5')
+                +filterItem('tab1', 'tabs11','все', '1', 'active')
+                +filterItem('tab2','tabs22',  'ВНУТРЕННИЕ <br>ИНЖЕНЕРНЫЕ СЕТИ', '2')
+                +filterItem('tab3', 'tabs33','НАРУЖНЫЕ<br>ИНЖЕНЕРНЫЕ СЕТИ', '3')
+                +filterItem('tab4', 'tabs44','ИТП', '4')
+                +filterItem('tab5','tabs55', 'специальные разделы', '5')
             
             .service-tab-content
                 .tab-content.active(data-role="1")
