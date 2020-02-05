@@ -17,11 +17,16 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 8px;
+    padding-top: 0px;
     border-bottom: 1px solid rgba(67, 66, 66, .3);
-    padding-bottom: 8px;
+    padding-bottom: 0px;
     background-color: rgba(255, 255, 255, .95);
     z-index: 100;
+
+    @media(max-width:1199px) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 
 .header-menu {
@@ -285,6 +290,10 @@
     width: 100px;
     height: 2px;
     background-color: #888888;
+
+    @media(max-width:991px) {
+        width: 50px;
+    }
 }
 
 .slick-dots li.slick-active {
@@ -391,6 +400,10 @@
     font-size: 12px;
     display: block;
     padding: 6px 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
 }
 

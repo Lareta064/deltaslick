@@ -13,7 +13,7 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1023,
             settings: {
-                dots: false
+                // dots: false
             }
         }]
     });

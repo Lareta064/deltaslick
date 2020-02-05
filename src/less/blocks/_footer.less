@@ -115,57 +115,65 @@ a.contact-item:hover {
     }
 }
 
-#buttonForm .modal-content {
-    background-color: transparent;
-    border: none;
+#buttonForm {
 
-    button {
-        position: absolute;
-        top: -50px;
-        right: -15px;
-        font-size: 2rem;
-        transition: .5s;
-        outline: none;
+    .modal-content {
+        background-color: transparent;
+        border: none;
 
-        &:hover {
-            color: @blue;
+        button {
+            position: absolute;
+            top: -50px;
+            right: -15px;
+            font-size: 2rem;
+            transition: .5s;
+            outline: none;
+
+            &:hover {
+                color: @blue;
+            }
         }
     }
-}
 
-.modal-dialog {
-    position: relative;
-    padding: 80px;
-    background: url('../img/bg/modalBg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-
-    @media(max-width:991px) {
-        padding: 60px;
-    }
-
-    @media(max-width:424px) {
-        padding: 20px;
-    }
-}
-
-.modal-form-title {
-    text-transform: uppercase;
-    text-align: center;
-    max-width: 300px;
-
-    h5 {
-        font-size: 25px;
+    .modal-dialog {
+        position: relative;
+        padding: 80px;
+        background: url('../img/bg/modalBg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
 
         @media(max-width:991px) {
-            font-size: 20px;
+            padding: 60px;
+        }
+
+        @media(max-width:424px) {
+            padding: 20px;
         }
     }
 
-    p {
-        font-size: 12px;
+    .modal-form-title {
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 300px;
 
+        h5 {
+            font-size: 25px;
+
+            @media(max-width:991px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+
+        }
     }
+
+
+
+
+
 }
 
 .form-group {
