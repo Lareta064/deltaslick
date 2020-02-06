@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.phone').mask("+7(999)999-99-99");
     $('.header-slider ').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -38,8 +39,10 @@ $(document).ready(function () {
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: '<span class="slick-arrow--custom-left">	&larr;</span>',
-        nextArrow: '<span class="slick-arrow--custom-right">&rarr;</span>'
+        dots: true,
+        arrows: false
+        // prevArrow: '<span class="slick-arrow--custom-left">	&larr;</span>',
+        // nextArrow: '<span class="slick-arrow--custom-right">&rarr;</span>'
     });
 
     $('.doc-slider').slick({
@@ -91,8 +94,15 @@ $(document).ready(function () {
     const menuElement = document.querySelector('.nav__item-drop ');
     const menuDrop = document.querySelector('.dropdown ');
     const bodyElement = document.querySelector('body')
+
     menuElement.addEventListener('mouseenter', function () {
-        menuDrop.classList.add('active');
+        if (window.innerWidth < 767) {
+            document.location.href = "  ../service.html";
+
+        } else {
+            menuDrop.classList.add('active');
+        }
+
     });
     bodyElement.addEventListener('click', function () {
         menuDrop.classList.remove('active');
@@ -105,16 +115,16 @@ $(document).ready(function () {
         menuDrop.classList.remove('active');
     })
 
-    // $(".doc-slider").magnificPopup({
-    //     delegate: 'a',
-    //     type: 'image',
+    $(".doc-slider").magnificPopup({
+        delegate: 'a',
+        type: 'image',
 
-    //     gallery: {
-    //         enabled: true,
-    //         navigateByImgClick: true,
-    //         preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-    //     }
-    // });
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        }
+    });
 
     //tabs
     const filerToggles = document.querySelectorAll('.filter-item')
@@ -147,4 +157,35 @@ $(document).ready(function () {
             this.classList.add('hide')
         })
     }
+
+    //-form valodate
+    $(".contact-form").each(function () {
+
+        $(this).on('submit', function (event) {
+            event.preventDefault();
+
+            var string = $(this).serialize(); // Соханяем данные введенные в форму в строку.
+
+            // Формируем ajax запрос
+            $.ajax({
+                type: "POST", // Тип запроса - POST
+                url: "php/mail.php", // Куда отправляем запрос
+                data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+                // Функция если все прошло успешно
+                success: function (html) {
+                    // $(".contact-form").slideUp(800);
+                    // $('#answer').html(html);
+                    window.location.href = "../thankyou.html";
+                }
+            });
+
+            // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+            return false;
+
+
+        });
+
+    })
+
 })

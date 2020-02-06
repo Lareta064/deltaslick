@@ -17,9 +17,9 @@ mixin headerInner(bgSrc, title, btnText)
 
                         span.logo-name Дельта #[br] вгрупп
                     nav.header-nav
-                        a(href="index.html").header-nav__item О компании
+                        a(href="index.html#about").header-nav__item О компании
                         .nav__item-drop
-                            a(href="#").header-nav__item Услуги
+                            a(href="service.html").header-nav__item Услуги
                             .dropdown
                                 .dropdown-list
                                     .dropdown-list-block
@@ -35,7 +35,7 @@ mixin headerInner(bgSrc, title, btnText)
                                         a(href="#").dropdown-list-item Мероприятия по обеспечению пожарной безопасности
                                     .dropdown-list-block
                                     
-                                        a(href="#").dropdown-list-item Отопление, вентиляция и кондиционирование
+                                        a(href="conditioner.html").dropdown-list-item Отопление, вентиляция и кондиционирование
                                         a(href="#").dropdown-list-item Охранная сигнализация
                                         a(href="#").dropdown-list-item Охранно-Защитная Дератизационная Система
                                         a(href="#").dropdown-list-item Перечень мероприятий по охране окружающей среды
@@ -54,16 +54,16 @@ mixin headerInner(bgSrc, title, btnText)
                                         a(href="#").dropdown-list-item Структурированная кабельная система
                                         a(href="#").dropdown-list-item Технологические решения
                                         a(href="#").dropdown-list-item Требования к обеспечению безопасной эксплуатации объектов
-                                        a(href="#").dropdown-list-item Электроснабжение и электроосвещение
+                                        a(href="electro.html").dropdown-list-item Электроснабжение и электроосвещение
                                         a(href="#").dropdown-list-item Энергоэффективность Схема планировочной организации земельного участка
 
 
-                        a(href="#").header-nav__item Портфолио
-                        a(href="#").header-nav__item Контакты
-                        a(href="#").header-nav__item.header-nav__item-email info@dv-proеkt.ru
+                        a(href="#works").header-nav__item Портфолио
+                        a(href="#footer").header-nav__item Контакты
+                        a(href="mailto:info@dv-proеkt.ru").header-nav__item.header-nav__item-email info@dv-proеkt.ru
                     .page-contacts
-                        a(href="#").page-contacts.contact-phone +7 (977) 986-57-38
-                        a(href="#").page-contacts.contact-email  info@dv-proеkt.ru
+                        a(href="tel:89779865738").page-contacts.contact-phone +7 (977) 986-57-38
+                        a(href="mailto:info@dv-proеkt.ru").page-contacts.contact-email  info@dv-proеkt.ru
                         //- gamburger-icon
                     button.cmn-toggle-switch.cmn-toggle-switch__htx#nav-menu-toggle
                         span toggle menu
@@ -75,7 +75,7 @@ mixin headerInner(bgSrc, title, btnText)
                     .header-btn
                         a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button Рассчитать проект
                         if btnText
-                            a(href="#!" type="button" data-toggle="modal" data-target="#buttonForm").page-button #{btnText}
+                            a(href="service.pdf" download type="button" ).page-button #{btnText}
 
 
 mixin work1
@@ -148,6 +148,3 @@ mixin work-item(icon, num, text)
         .work-stage-text
             p.work-stage-number Этап #{num}
             p.work-stage-text !{text}
-
-
-

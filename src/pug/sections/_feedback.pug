@@ -4,14 +4,14 @@ section.feedback
             h3.title-3 не нашли то, что искали?
             p Мы Вам поможем! Оставьте заявку на обратный звонок
         .feedback-form
-            form.contact-form(action="")
+            form(action="")
                 .form-row
                     .form-group
-                        input(type="text" name="user-name" required).form-input
+                        input(type="text" name="user-name"  placeholder="Имя" required).form-input
                         span
                             i.far.fa-user
                     .form-group
-                        input(type="tel" name="user-tel" required).form-input.phone
+                        input(type="tel" name="user-tel"  placeholder="Телефон" required).form-input.phone
                         span
                             i.fas.fa-mobile-alt
                 .form-group.form-group--btn

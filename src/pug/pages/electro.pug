@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+
+
+
+block content
+    +headerInner('electro', ' электроснабжение и&nbsp;электроосвещение', 'посмотреть презентацию')
+    include ../sections/_page-electro.pug
+    include ../sections/_feedback.pug
+    
+    include ../sections/_benefits.pug
+    include ../sections/_works.pug    
+    include ../sections/_serv-electro-info.pug
+    include ../sections/_footer.pug
+
+
+block variables
+    -var title = "Электроснабжение";

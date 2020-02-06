@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+
+
+
+block content
+    +headerInner('servCondBg', ' отопление, вентиляция и&nbsp;кондициорирование', 'посмотреть презентацию')
+    include ../sections/_page-cond.pug
+    include ../sections/_feedback.pug
+    
+    include ../sections/_benefits.pug
+    include ../sections/_works.pug    
+    include ../sections/_serv-cond-info.pug
+    include ../sections/_footer.pug
+
+
+block variables
+    -var title = "Отопление, вентиляция";

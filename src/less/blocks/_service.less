@@ -169,8 +169,10 @@
     margin-bottom: 25px;
 }
 
-.tab-content-item p {
+.tab-content-item p,
+.tab-content-item a {
     margin-bottom: 20px;
+    display: block;
 }
 
 .data-list,
@@ -342,6 +344,12 @@
     text-indent: 1em;
 }
 
+.hide-info p:last-child {
+    text-indent: 0em;
+    font-style: italic;
+    margin-top: 14px;
+}
+
 .more-info {
     font-size: 18px;
     color: @blue;
@@ -356,4 +364,8 @@
 
 .more-info.hide {
     display: none;
+}
+
+.color-span {
+    color: @blue
 }
