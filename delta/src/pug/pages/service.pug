@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+include ../layouts/mixins.pug
+
+
+block content
+    +headerInner('serviceBg', ' разработка проектной&nbsp;и <br> рабочей документации')
+    include ../sections/_service_inner.pug
+    include ../sections/_feedback.pug
+    
+    include ../sections/_benefits.pug
+    include ../sections/_works.pug
+    include ../sections/_doc.pug
+    include ../sections/_partners.pug
+    include ../sections/_footer.pug
+
+
+block variables
+    -var title = "Услуги";

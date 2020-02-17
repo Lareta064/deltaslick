@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="21.6746mm" height="21.6746mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2167 2167"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#434242;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="water.eps">
+   <path class="fil0" d="M1055 786c10,-15 20,-30 29,-43 9,13 18,28 28,43 87,129 217,320 217,416 0,68 -28,129 -72,174 -44,45 -105,71 -173,71 -68,0 -129,-27 -174,-71 -45,-45 -71,-106 -71,-174 0,-96 130,-288 216,-416zm30 -126l-2 0c-9,1 -19,6 -25,14 -15,25 -32,50 -52,80 -91,133 -227,334 -227,449 0,84 34,160 90,216 55,54 131,88 215,88 84,0 160,-34 215,-90 55,-55 90,-131 90,-215 0,-115 -136,-315 -227,-448 -20,-29 -37,-55 -53,-80 -2,-3 -6,-7 -9,-9 -5,-3 -10,-4 -15,-5z"/>
+   <path class="fil0" d="M1186 1383c31,-17 56,-43 74,-71 18,-29 28,-64 30,-99 1,-16 -12,-30 -28,-31 -16,-2 -30,11 -31,27 -1,25 -9,50 -22,70 -13,21 -31,39 -53,51 -14,8 -19,26 -11,40 9,16 27,21 41,13z"/>
+  </g>
+ </g>
+</svg>

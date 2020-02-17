@@ -1,0 +1,127 @@
+.docs-cpo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+
+    @media(max-width:767px) {
+        display: block;
+    }
+}
+
+.docs-items {
+    display: flex;
+    align-items: center;
+
+    @media(max-width:991px) {
+        justify-content: center;
+    }
+
+    @media(max-width:767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.docs-title {
+    width: 40%;
+
+    @media(max-width:1439px) {
+        width: 33%;
+    }
+}
+
+.docs-item-el {
+    max-width: 320px;
+    width: 48%;
+    border: 1px solid rgba(0, 0, 0, .15);
+    transition: .5s;
+
+    &:first-child {
+        margin-right: 25px;
+    }
+
+    @media(max-width:991px) {
+
+        max-width: 200px;
+    }
+
+    @media(max-width:767px) {
+
+        max-width: 270px;
+    }
+}
+
+.docs-item-el:hover {
+    box-shadow: 0 0 18px -3px rgba(0, 0, 0, .45);
+    border: 1px solid transparent;
+}
+
+.doc-iso .title-2 {
+    transform: translateY(100%);
+
+    @media(max-width:767px) {
+        transform: translateY(0%);
+    }
+}
+
+.doc-slider-wrapper {
+    position: relative;
+    margin-left: 40%;
+    width: 60%;
+    transform: translateY(-40%);
+
+    @media(max-width:767px) {
+        transform: translateY(10%);
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+.doc-slider-wrapper:before,
+.doc-slider-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 20;
+
+}
+
+.doc-slider-wrapper:after {
+    left: -10px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 75%);
+}
+
+.doc-slider-wrapper:before {
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 75%);
+}
+
+// .doc-slider {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
+.doc-iso-item {
+    width: 320px;
+    margin: 30px;
+    transition: .5s;
+
+    @media(max-width:991px) {
+        width: 190px;
+        margin-right: 20px;
+    }
+
+    @media(max-width:767px) {
+        width: 230px;
+    }
+
+}
+
+.doc-iso-item.slick-center {
+    transform: scale(1.04);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
